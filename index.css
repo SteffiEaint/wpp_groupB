@@ -1,0 +1,19 @@
+.round-image {
+    border-radius: 50%; /* Makes the image round */
+    width: 100%; /* Set the width as needed */
+    height: 100%; /* Set the height as needed */
+  }
+  .square-image {
+    width: 20%; /* Set the width as needed */
+    height: 20%; /* Set the height as needed */
+    object-fit: cover; /* Crops the image while maintaining aspect ratio */
+  }
+  .image{
+    text-align: left;
+  }
+  .nav-bottom{
+    margin-top: 90%;
+  }
+  .navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
