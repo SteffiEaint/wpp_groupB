@@ -1,0 +1,22 @@
+### Get posts 
+GET http://localhost:3001
+
+### Login with valid credentials 
+POST http://localhost:3001/user/login 
+Content-Type: application/json
+
+{
+"email":"admin@foo.com", 
+"password":"admin123"
+
+}
+
+### Login with invalid credentials 
+POST http://localhost:3001/user/login 
+Content-Type: application/json
+
+{
+"email":"admin@foo.com", 
+"password":"wrongpassword"
+
+}
