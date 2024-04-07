@@ -1,0 +1,56 @@
+.image {
+  text-align: left;
+}
+.nav-bottom {
+  margin-top: 90%;
+}
+.navbar {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+.carousel {
+  width: 100%;
+}
+
+.post-card {
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%; /* 使用相对单位，使卡片宽度自适应屏幕大小 */
+  max-width: auto; 
+  height: auto; /* 自适应高度 */
+  top: auto; /* 移除固定的定位属性 */
+  left: auto; /* 移除固定的定位属性 */
+  gap: 0px; /* 不再需要间隙 */
+  opacity: 1; /* 移除透明度 */
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.post-thumbnail {
+  width: 100px; /* 缩略图宽度 */
+  height: auto; /* 自适应高度 */
+  float: right;
+  margin-left: 15px;
+}
+
+.nav-item-flex{
+  display: inline-flex;
+  align-items: center;
+}
+

@@ -6,9 +6,8 @@ POST http://localhost:3001/user/login
 Content-Type: application/json
 
 {
-"email":"admin@foo.com", 
+"username":"admin", 
 "password":"admin123"
-
 }
 
 ### Login with invalid credentials 
@@ -16,7 +15,36 @@ POST http://localhost:3001/user/login
 Content-Type: application/json
 
 {
-"email":"admin@foo.com", 
+"username":"admin", 
 "password":"wrongpassword"
-
 }
+
+### test passwordreset email exsits 
+POST http://localhost:3001/user/reset
+Content-Type: application/json
+
+{
+"email":"admin@123",
+"newPassword":"newpassword"
+}
+
+### test passwordreset email dosent exsits 
+POST http://localhost:3001/user/reset
+Content-Type: application/json
+
+{
+"email":"admin@456",
+"newPassword":"wrongpassword"
+}
+
+### Registration 
+POST http://localhost:3001/user/signup 
+Content-Type: application/json
+
+{ 
+    "username": "admin", 
+    "email": "admin@123", 
+    "password":"admin123" 
+}
+
+
